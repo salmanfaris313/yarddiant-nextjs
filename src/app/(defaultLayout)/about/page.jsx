@@ -10,143 +10,83 @@ import GallerySection from "@/app/ui/Section/GallerySection";
 import TeamSection from "@/app/ui/Section/TeamSection";
 
 import bannerImg from '../../../../public/images/about/banner_img.png'
-import whyChooseUsImg from '../../../../public//images/about/why_choose_us.jpeg'
+import whyChooseUsImg from '../../../../public//images/home/whychooses.jpg'
 
 const departmentData = [
+ 
   {
-    title: 'Diagnostic testing',
+    title: 'Web Design',
     subTitle:
-      'Blood tests, imaging studies, and other tests to diagnose health conditions',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a est, molestiae suscipit animi alias enim ipsa id aliquid quidem ',
     iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    href: '/',
   },
   {
-    title: 'Rehabilitation services',
+    title: 'Web Development',
     subTitle:
-      'Physical therapy, occupational therapy, and other services to help patients recover from injuries',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a est, molestiae suscipit animi alias enim ipsa id aliquid quidem ',
     iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    href: '/',
   },
   {
-    title: 'Preventive care',
+    title: 'Classified Website Development',
     subTitle:
-      'Annual checkups, immunizations, and health screenings care preventive',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a est, molestiae suscipit animi alias enim ipsa id aliquid quidem ',
     iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    href: '/',
   },
   {
-    title: 'Treatment for acute and chronic conditions',
+    title: 'Web Application Security',
     subTitle:
-      'Medication management, disease management, and other treatments to improve health outcomes',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a est, molestiae suscipit animi alias enim ipsa id aliquid quidem ',
     iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    href: '/',
   },
   {
-    title: 'Mental health services',
+    title: 'Travel agency website development',
     subTitle:
-      'Counseling, therapy, and other services to help patients manage mental health conditions',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a est, molestiae suscipit animi alias enim ipsa id aliquid quidem ',
     iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    href: '/',
   },
 ];
 
 const featureListData = [
   {
-    title: 'Experienced Medical Professionals',
+    title: 'CMS Web Development',
     subTitle:
-      'Our team includes experienced doctors, nurses, <br />and other healthcare professionals who are <br />dedicated to providing the best possible care to <br />our patients.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     iconUrl: '/images/icons/professional.svg',
   },
   {
-    title: 'Comprehensive <br />Services',
+    title: 'E-Commerce  development',
     subTitle:
-      'We offer a wide range of healthcare services, <br />from preventive care to specialized treatment <br />for complex conditions.',
-    iconUrl: '/images/icons/comprehensive.svg',
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  iconUrl: '/images/icons/professional.svg',
   },
   {
-    title: 'Patient-centered <br />Approach',
+    title: 'Wordpress web development',
     subTitle:
-      'We believe in treating each patient as an <br />individual, and we take the time to understand <br />your unique health needs and concerns.',
-    iconUrl: '/images/icons/patient.svg',
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  iconUrl: '/images/icons/professional.svg',
   },
   {
-    title: 'State-of-the-art <br />Facilities',
+    title: 'Web development Security',
     subTitle:
-      'Our healthcare center is equipped with the <br />latest technology and equipment to provide our <br />patients with the most advanced care possible.',
-    iconUrl: '/images/icons/facilities.svg',
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  iconUrl: '/images/icons/professional.svg',
   },
 ];
 
 const funFactData = [
   { number: '20+', title: 'Years of experience' },
-  { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5000+', title: 'Patients served annually' },
-  { number: '10+', title: 'Healthcare providers on staff' },
-  { number: '22+', title: 'Convenient locations in the area' },
+          { number: '25%', title: 'Professional Experts' },
+          { number: '200+', title: 'Projects Complete' },
+          { number: '18+', title: 'World-wide Clients' },
 ];
 
-const teamData = [
-  {
-    imgUrl: '/images/about/doctor_1.png',
-    name: 'Dr. James Lee, MD',
-    designation: 'Head of Cardiologist',
-    description:
-      'With expertise in managing complex heart conditions and performing advanced cardiac procedures',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: '/images/about/doctor_2.png',
-    name: 'Dr. John Smith, MD',
-    designation: 'Emergency Medicine Physician',
-    description:
-      'With expertise in treating acute illnesses and injuries in medicine physician',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: '/images/about/doctor_3.png',
-    name: 'Dr. Susan Bones, MD',
-    designation: 'Board-certified Pediatrician',
-    description:
-      'With experience in managing complex medical conditions in children',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-];
 
-const galleryData = [
-  { imgUrl: '/images/about/portfolio_2_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_3_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_1_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_4_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_5_lg.jpeg' },
-];
 
-const awardData = [
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'Malcolm Baldrige National Quality Award',
-  },
-  { iconUrl: '/images/icons/award.svg', title: 'HIMSS Davies Award' },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'Healthgrades National’s Best Hospital',
-  },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'Joint Commission Gold Seal of Approval',
-  },
-];
 
 // export const metadata = {
 //   title: "About"
@@ -158,8 +98,8 @@ export default function About() {
       <BannerSectionStyle3
         bgUrl="/images/about/banner_bg.svg"
         imgUrl={bannerImg}
-        title="Welcome to <br />ProHealth Medical & Healthcare Center"
-        subTitle="Your Partner in Health and Wellness"
+        title="A Complete Web Solution Agency"
+        subTitle="Our team develops comprehensive business and Custom Web Development Company or Services for clients across the globe."
       />
       <Section topMd={200} topLg={150} topXl={110}>
         <DepartmentSectionStyle2
@@ -181,43 +121,9 @@ export default function About() {
           data={funFactData}
         />
       </Section>
-      <Section topMd={190} topLg={145} topXl={105}>
-        <TeamSection
-          sectionTitle="Experts Doctor"
-          sectionTitleUp="MEET OUR"
-          data={teamData}
-        />
-      </Section>
-      <Section topMd={170} topLg={120} topXl={80}>
-        <GallerySection
-          sectionTitle="Our Facilities and <br />Latest Activities"
-          sectionTitleUp="HAVE A LOOK AT"
-          data={galleryData}
-        />
-      </Section>
-      <Section
-        topMd={190}
-        topLg={145}
-        topXl={105}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <AwardSectionStyle2
-          sectionTitle="Winning Awards and <br />Recognition"
-          sectionTitleUp="AWARDS"
-          sectionSubTitle="We have been recognized for our commitment to <br />excellence in healthcare."
-          data={awardData}
-        />
-      </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="/images/about/banner_bg_2.jpeg"
-          title="Don’t Let Your Health <br />Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced <br />medical professionals today!"
-          center
-        />
-      </Section>
+  
+ 
+  
     </>
   );
 }
